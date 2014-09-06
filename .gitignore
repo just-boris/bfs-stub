@@ -1,1 +1,12 @@
 /node_modules/
+/.bem/tmp
+
+/.bem/cache
+
+/desktop.bundles/*/*.*
+!desktop.bundles/*/*.bemjson.js
+!desktop.bundles/index/*.bemdecl.js
+!desktop.bundles/partners/*.bemdecl.js
+!desktop.bundles/pages/*.bemdecl.js
+!desktop.bundles/serp/*.bemdecl.js
+!desktop.bundles/.bem/*

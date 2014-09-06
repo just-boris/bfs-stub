@@ -7,7 +7,7 @@
         { elem: 'css', url: '_index.css' }
     ],
     scripts: [{ elem: 'js', url: '_index.js' }],
-    mix: {block : 'sssr', js: true},
+    mix: { block : 'sssr', js: true },
     content: [
        {
         block: 'header',
@@ -47,46 +47,7 @@
             }
         ]
        },
-       {
-           block: 'content',
-           content: [
-            {
-                block: 'island',
-                content: [
-                    {
-                        elem: 'header',
-                        content: {
-                            block: 'user',
-                            content: [
-                                {
-                                    elem: 'post-time',
-                                    content: 'time'
-                                },
-                                {
-                                    block: 'image',
-                                    mix: { block: 'user', elem: 'icon' },
-                                    url: 'http://placekitten.com/400/400',
-                                    alt: 'user.name'
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        elem: 'text',
-                        content: 'Twitter message text'
-                    },
-                    {
-                        elem: 'footer',
-                        content: [
-                            {
-                                block: 'service',
-                                mods: { type: 'twitter' }
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-       }
+       { block: 'content', /*content: { block: 'island' }*/ },
+       { block: 'splash', content: 'Tweets not found try to search in the box above' }
     ]
 })

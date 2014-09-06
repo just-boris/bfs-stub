@@ -108,42 +108,6 @@ exports.blocks = [
         "name": "content"
     },
     {
-        "name": "island",
-        "elems": [
-            {
-                "name": "header"
-            },
-            {
-                "name": "text"
-            },
-            {
-                "name": "footer"
-            }
-        ]
-    },
-    {
-        "name": "user",
-        "elems": [
-            {
-                "name": "post-time"
-            },
-            {
-                "name": "icon"
-            }
-        ]
-    },
-    {
-        "name": "image"
-    },
-    {
-        "name": "service",
-        "mods": [
-            {
-                "name": "type",
-                "vals": [
-                    "twitter"
-                ]
-            }
-        ]
+        "name": "splash"
     }
 ];

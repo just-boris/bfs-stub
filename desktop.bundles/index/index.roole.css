@@ -8,12 +8,6 @@
 }
 
 /* ../../desktop.blocks/page/page.css end */
-/* ../../desktop.blocks/sssr/sssr.css begin */
-.sssr_loading .content {
- opacity: 0.5;
-}
-
-/* ../../desktop.blocks/sssr/sssr.css end */
 /* ../../desktop.blocks/header/header.css begin */
 .header {
  position: fixed;
@@ -476,14 +470,6 @@
 }
 
 /* ../../libs/bem-components/design/common.blocks/spin/_theme/spin_theme_normal.roo end */
-/* ../../desktop.blocks/content/content.css begin */
-body .content {
- column-count: 4;
- column-gap: 15px;
- padding: 10px 10%;
-}
-
-/* ../../desktop.blocks/content/content.css end */
 /* ../../desktop.blocks/island/island.css begin */
 .island {
  font-size: 18px;
@@ -510,7 +496,31 @@ body .content {
 }
 
 /* ../../desktop.blocks/island/island.css end */
-/* ../../libs/bem-components/common.blocks/image/image.roo begin */
-.image {
- border: 0;
+/* ../../desktop.blocks/content/content.css begin */
+body .content {
+ column-count: 4;
+ column-gap: 15px;
+ padding: 10px 10%;
+}
+
+.content_hidden {
+ display: none;
+}
+
+.content__status {
+ color: #fff;
+}
+
+.content_loading {
+ opacity: 0.5;
+}
+
+/* ../../desktop.blocks/content/content.css end */
+/* ../../desktop.blocks/splash/splash.css begin */
+.splash {
+ color: #fff;
+}
+
+.splash_hidden {
+ display: none;
 }

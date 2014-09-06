@@ -290,48 +290,13 @@ exports.deps = [
         "val": "s"
     },
     {
-        "block": "content"
-    },
-    {
         "block": "island"
     },
     {
-        "block": "island",
-        "elem": "header"
+        "block": "content"
     },
     {
-        "block": "island",
-        "elem": "text"
-    },
-    {
-        "block": "island",
-        "elem": "footer"
-    },
-    {
-        "block": "user"
-    },
-    {
-        "block": "user",
-        "elem": "post-time"
-    },
-    {
-        "block": "user",
-        "elem": "icon"
-    },
-    {
-        "block": "image"
-    },
-    {
-        "block": "service"
-    },
-    {
-        "block": "service",
-        "mod": "type"
-    },
-    {
-        "block": "service",
-        "mod": "type",
-        "val": "twitter"
+        "block": "splash"
     }
 ];
 exports.depsByTechs = {

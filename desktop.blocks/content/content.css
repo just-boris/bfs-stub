@@ -4,6 +4,14 @@ body .content {
     padding: 10px 10%;
 }
 
+.content_hidden {
+    display: none;
+}
+
+.content__status {
+	color: #fff;
+}
+
 .content_loading {
     opacity: 0.5;
 }	

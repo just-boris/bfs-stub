@@ -5,14 +5,17 @@ modules.define('sssr', ['i-bem__dom', 'jquery'], function(provide, BEMDOM, $) {
             js: {
                 inited: function() {
                     this._form = this.findBlockInside('form');
-                    this._form.on('submit', function() {
-                        this._sendRequest();
-                    }, this);
+                    this._form.on('submit', this._sendRequest, this);
+                    this.setMod('empty');
                 }
             },
             loading: function(modName, modVal) {
                 this.findBlockInside('spin').setMod('progress', modVal);
                 this.findBlockInside('content').setMod(modName, modVal);
+            },
+            empty: function(modName, modVal) {
+                (this._splash || (this._splash = this.findBlockInside('splash'))).setMod('hidden', !modVal);
+                (this._content || (this._content = this.findBlockInside('content'))).setMod('hidden', modVal);
             }
         },
         _sendRequest: function() {
@@ -29,8 +32,8 @@ modules.define('sssr', ['i-bem__dom', 'jquery'], function(provide, BEMDOM, $) {
             });
         },
         _onSuccess: function(result) {
-            this.delMod('loading');
-            BEMDOM.update(this.findBlockInside('content').domElem, result);
+            this.delMod('loading').delMod('empty');
+            BEMDOM.update(this._content.domElem, result);
         }
     }))
 })
